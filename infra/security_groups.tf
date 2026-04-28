@@ -7,7 +7,7 @@ resource "aws_security_group" "ec2" {
   vpc_id      = aws_vpc.main.id
 
   # SSH access — restricted to engineer IP only
-  # Never open to 0.0.0.0/0 — lesson from November 2023 incident.. LOL
+  # Never open to 0.0.0.0/0 — lesson from November 2023 incident.. As e dey Hot..LOL
   ingress {
     description = "SSH from engineer IP only"
     from_port   = 22
