@@ -1,0 +1,31 @@
+=== TERRAFORM OUTPUTS ===
+ec2_instance_id = "i-081443046a2d7a863"
+ec2_public_ip = "34.255.128.116"
+private_subnet_1_id = "subnet-0e41a61fccc9e5c7d"
+public_subnet_1_id = "subnet-0334de1b42329af3b"
+rds_database_name = "vaultbridge"
+rds_endpoint = "vaultbridge-postgres.cr6a62kwkp3n.eu-west-1.rds.amazonaws.com:5432"
+rds_port = 5432
+vpc_id = "vpc-00b3d2a2c951bf867"
+
+=== RESOURCE LIST ===
+data.aws_ami.amazon_linux_2023
+aws_db_instance.postgres
+aws_db_parameter_group.postgres15
+aws_db_subnet_group.main
+aws_eip.main
+aws_instance.app_server
+aws_internet_gateway.main
+aws_key_pair.main
+aws_route_table.public
+aws_route_table_association.public_1
+aws_route_table_association.public_2
+aws_security_group.ec2
+aws_security_group.rds
+aws_subnet.private_1
+aws_subnet.private_2
+aws_subnet.public_1
+aws_subnet.public_2
+aws_vpc.main
+
+Saved: Sat, May  2, 2026  2:51:29 PM
